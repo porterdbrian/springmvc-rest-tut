@@ -25,7 +25,7 @@ public class UserEntity implements Serializable {
 	@Column(nullable = false, length = 64)
 	private String lastName;
 
-	@Column(nullable = false, length = 128)
+	@Column(nullable = false, length = 128, unique=true)
 	private String email;
 
 	@Column(nullable = false)
