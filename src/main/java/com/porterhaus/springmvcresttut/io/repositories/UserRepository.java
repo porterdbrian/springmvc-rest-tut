@@ -1,4 +1,4 @@
-package com.porterhaus.springmvcresttut;
+package com.porterhaus.springmvcresttut.io.repositories;
 
 import org.springframework.data.repository.CrudRepository;
 
