@@ -5,6 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
+import com.porterhaus.springmvcresttut.security.ApplicationProperties;
+
 @SpringBootApplication
 public class SpringmvcRestTutApplication {
 
@@ -20,6 +22,11 @@ public class SpringmvcRestTutApplication {
 	@Bean
 	public SpringApplicationContext springApplicationContext() {
 		return new SpringApplicationContext();
+	}
+	
+	@Bean(name="ApplicationProperties")
+	public ApplicationProperties applicationProperties() {
+		return new ApplicationProperties();
 	}
 
 }
